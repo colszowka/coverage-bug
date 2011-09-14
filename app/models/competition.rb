@@ -1,4 +1,6 @@
 class Competition < ActiveRecord::Base
+  has_many :news
+
   validates :name, :description, :starts_at, :ends_at, :presence => true
   validate :ends_at_cannot_be_before_starts_at
 

@@ -5,4 +5,9 @@ FactoryGirl.define do
     starts_at Date.new(2010, 2, 12)
     ends_at Date.new(2010, 2, 14)
   end
+
+  factory :news do
+    content "The competition is canceled!"
+    competition
+  end
 end

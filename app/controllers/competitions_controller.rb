@@ -15,4 +15,8 @@ class CompetitionsController < ApplicationController
       render :new
     end
   end
+
+  def show
+    @competition = Competition.find params[:id]
+  end
 end

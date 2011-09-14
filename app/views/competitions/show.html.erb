@@ -1,0 +1,10 @@
+<h2><%= @competition.name %></h2>
+<p>
+  <%= @competition.description %>
+</p>
+
+<ul id="news">
+  <% for news in @competition.news %>
+    <li><%= news.content %></li>
+  <% end %>
+</ul>
