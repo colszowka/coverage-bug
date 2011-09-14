@@ -1,0 +1,9 @@
+<h2>Events</h2>
+
+<ul>
+  <% for event in @events %>
+    <li><%= event.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "New Event", new_event_path %>

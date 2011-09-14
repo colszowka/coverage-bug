@@ -10,4 +10,8 @@ FactoryGirl.define do
     content "The competition is canceled!"
     competition
   end
+
+  factory :event do
+    name "3x3x3"
+  end
 end
