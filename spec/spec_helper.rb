@@ -32,6 +32,8 @@ Spork.prefork do
     config.use_transactional_fixtures = true
   end
 
+  FactoryGirl.find_definitions
+
 end
 
 Spork.each_run do

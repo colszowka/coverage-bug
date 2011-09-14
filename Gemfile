@@ -33,4 +33,6 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'spork', '~> 0.9.0.rc'
+  gem 'shoulda'
+  gem 'factory_girl'
 end
