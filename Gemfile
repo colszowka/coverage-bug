@@ -32,4 +32,5 @@ group :test, :development do
   gem 'turn', :require => false
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'spork', '~> 0.9.0.rc'
 end
