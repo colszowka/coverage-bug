@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-WcaCompetiitons::Application.load_tasks
+WcaCompetitions::Application.load_tasks
