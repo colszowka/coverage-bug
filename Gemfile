@@ -28,11 +28,12 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test, :development do
-  # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', :require => false # Pretty printed test output
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'spork', '~> 0.9.0.rc'
-  gem 'shoulda'
-  gem 'factory_girl'
+  gem 'capybara' # for testing what the user sees
+  gem 'spork', '~> 0.9.0.rc' # helps speeding up the tests
+  gem 'shoulda' # for validation matches in rspec
+  gem 'factory_girl' # the cool way of writing fixtures
+  gem 'launchy' # for launching web pages within capybara
+  gem 'database_cleaner'
 end

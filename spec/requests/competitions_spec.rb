@@ -17,7 +17,7 @@ describe "Competition" do
     end
   end
 
-  describe "GET /competitions/id" do
+  describe "GET /competitions/:id" do
     before do
       c = create(:competition, :name => "Karlsruhe Open 2011", :description => "foo")
       n = create(:news, :content => "Sorry, but the venue burnt down! :(", :competition_id => c.id)
