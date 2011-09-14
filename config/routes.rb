@@ -1,3 +1,4 @@
-WcaCompetiitons::Application.routes.draw do
+WcaCompetitions::Application.routes.draw do
   resources :competitions
+  root :to => "competitions#index"
 end
