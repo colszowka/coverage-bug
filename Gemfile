@@ -26,10 +26,6 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :production do
-  gem 'pg'
-end
-
 group :test, :development do
   gem 'sqlite3'
   gem 'turn', :require => false # Pretty printed test output
@@ -40,5 +36,6 @@ group :test, :development do
   gem 'factory_girl' # the cool way of writing fixtures
   gem 'launchy' # for launching web pages within capybara
   gem 'database_cleaner'
-  gem 'simplecov'
+  gem 'simplecov', :require => false, :git => 'https://github.com/colszowka/simplecov.git'
+  gem 'simplecov-html', :require => false, :git => 'https://github.com/colszowka/simplecov-html.git'
 end
