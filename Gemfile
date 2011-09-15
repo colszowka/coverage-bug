@@ -31,10 +31,8 @@ group :test, :development do
   gem 'turn', :require => false # Pretty printed test output
   gem 'rspec-rails'
   gem 'capybara' # for testing what the user sees
-  gem 'spork', '~> 0.9.0.rc' # helps speeding up the tests
   gem 'shoulda' # for validation matches in rspec
   gem 'factory_girl' # the cool way of writing fixtures
-  gem 'launchy' # for launching web pages within capybara
   gem 'database_cleaner'
   gem 'simplecov', :require => false, :git => 'https://github.com/colszowka/simplecov.git'
   gem 'simplecov-html', :require => false, :git => 'https://github.com/colszowka/simplecov-html.git'
