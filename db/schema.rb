@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20110914234048) do
   end
 
   create_table "news", :force => true do |t|
-    t.string   "content",        :null => false
+    t.text     "content",        :null => false
     t.integer  "competition_id", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
