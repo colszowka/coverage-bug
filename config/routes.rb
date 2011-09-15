@@ -1,9 +1,12 @@
 WcaCompetitions::Application.routes.draw do
-  resources :competitions do
-    resources :news
+  scope "/(:locale)", :locale => /de|en/ do
+    resources :competitions do
+      resources :news
+    end
+
+    resources :events
   end
 
-  resources :events
-
+  match ":locale" => "competitions#index"
   root :to => "competitions#index"
 end
