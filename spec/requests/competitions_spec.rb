@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "Competition" do
   describe "GET /competitions" do
     it "should display competitions" do

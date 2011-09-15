@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe "News" do
   describe "POST /competitions/:id/POST" do
     it "should create news for competition" do
