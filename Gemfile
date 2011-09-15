@@ -38,4 +38,5 @@ group :test, :development do
   gem 'factory_girl' # the cool way of writing fixtures
   gem 'launchy' # for launching web pages within capybara
   gem 'database_cleaner'
+  gem 'simplecov'
 end
