@@ -16,6 +16,8 @@ group :assets do
   gem 'uglifier'
 end
 
+gem 'simple_form'
+
 gem 'jquery-rails'
 
 # Use unicorn as the web server

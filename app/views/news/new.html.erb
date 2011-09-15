@@ -1,9 +1,4 @@
-<%= form_for [@competition, @news] do |f| %>
-  <p>
-    <%= f.label :content %>
-    <%= f.text_field :content %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+<%= simple_form_for [@competition, @news] do |f| %>
+  <%= f.input :content %>
+  <%= f.button :submit %>
 <% end %>

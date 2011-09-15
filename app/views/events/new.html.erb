@@ -1,9 +1,5 @@
-<%= form_for @event do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
+<%= simple_form_for @event do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
 <% end %>
