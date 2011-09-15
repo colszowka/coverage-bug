@@ -9,33 +9,14 @@ describe "Competition" do
     end
   end
 
-# uncomment this to see simplecov failing :/
-=begin
-  describe "POST /competitions" do
-    it "should create competitions" do
-      visit new_competition_path
-      fill_in "Name", :with => "Foo"
-      fill_in "Description", :with => "Muh"
-      click_button "Create Competition"
-      page.should have_content("Foo")
-    end
-  end
-
   describe "GET /competitions/:id" do
     before do
-      c = create(:competition, :name => "Karlsruhe Open 2011", :description => "foo")
-      n = create(:news, :content => "Sorry, but the venue burnt down! :(", :competition_id => c.id)
-      visit competition_path(c)
+      @c = create(:competition, :name => "Karlsruhe Open 2011", :description => "foo")
+      n = create(:news, :content => "Sorry, but the venue burnt down! :(", :competition_id => @c.id)
     end
 
     it "should display basic information" do
-      page.should have_content("Karlsruhe Open 2011")
-      page.should have_content("foo")
-    end
-
-    it "should display at least the latest news" do
-      page.should have_content("but the venue burnt")
+      #visit competition_path(@c) # uncomment this line to see simplecov failing
     end
   end
-=end
 end
