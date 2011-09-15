@@ -1,22 +1,14 @@
 require 'spec_helper'
 
 describe "Competition" do
-  describe "GET /competitions" do
-    it "should display competitions" do
-      create(:competition, :name => "Blub")
-      visit competitions_path
-      page.should have_content("Blub")
-    end
-  end
-
   describe "GET /competitions/:id" do
-    before do
-      @c = create(:competition, :name => "Karlsruhe Open 2011", :description => "foo")
-      n = create(:news, :content => "Sorry, but the venue burnt down! :(", :competition_id => @c.id)
-    end
-
     it "should display basic information" do
-      #visit competition_path(@c) # uncomment this line to see simplecov failing
+      # CompetitionController needs to be visited to produce bug
+      get "/competitions"
+      # Replace this with c = Competition.create(:name => "Karlsruhe Open 2011", :description => "foo", :starts_at => Date.new, :ends_at => Date.new)
+      # to get full coverage of competition model
+      c = FactoryGirl.create(:competition, :name => "Karlsruhe Open 2011", :description => "foo")
+      Competition.find(c.id)
     end
   end
 end

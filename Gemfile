@@ -30,10 +30,7 @@ group :test, :development do
   gem 'sqlite3'
   gem 'turn', :require => false # Pretty printed test output
   gem 'rspec-rails'
-  gem 'capybara' # for testing what the user sees
-  gem 'shoulda' # for validation matches in rspec
   gem 'factory_girl' # the cool way of writing fixtures
-  gem 'database_cleaner'
   gem 'simplecov', :require => false, :git => 'https://github.com/colszowka/simplecov.git'
   gem 'simplecov-html', :require => false, :git => 'https://github.com/colszowka/simplecov-html.git'
 end

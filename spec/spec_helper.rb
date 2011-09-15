@@ -26,16 +26,8 @@ RSpec.configure do |config|
 
   # Transactions don't work :/
 
-  DatabaseCleaner.strategy = :truncation
-  config.use_transactional_fixtures = false
-  config.before :each do
-    DatabaseCleaner.start
-  end
-  config.after :each do
-    DatabaseCleaner.clean
-  end
+  config.use_transactional_fixtures = true
 
-  config.include Factory::Syntax::Methods
 end
 
 FactoryGirl.find_definitions
