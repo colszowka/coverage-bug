@@ -1,5 +1,9 @@
-require 'simplecov'
-SimpleCov.start 'rails'
+require 'coverage'
+Coverage.start
+at_exit do
+  require 'pp'
+  pp Coverage.result.find{|file, cov| file =~ /competition\.rb/ }
+end
 
 
 

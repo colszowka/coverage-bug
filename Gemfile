@@ -31,6 +31,4 @@ group :test, :development do
   gem 'turn', :require => false # Pretty printed test output
   gem 'rspec-rails'
   gem 'factory_girl' # the cool way of writing fixtures
-  gem 'simplecov', :require => false, :git => 'https://github.com/colszowka/simplecov.git'
-  gem 'simplecov-html', :require => false, :git => 'https://github.com/colszowka/simplecov-html.git'
 end
