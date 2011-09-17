@@ -2,8 +2,8 @@
 
 ### Links
   
-    * https://github.com/colszowka/simplecov/issues/60
-    * http://redmine.ruby-lang.org/issues/5333
+  * https://github.com/colszowka/simplecov/issues/60
+  * http://redmine.ruby-lang.org/issues/5333
 
 ## Running it
 
