@@ -1,6 +1,11 @@
-## Running it
+# Demo project for wrong results in Coverage library
 
-***Also see: https://github.com/colszowka/simplecov/issues/60***
+### Links
+  
+    * https://github.com/colszowka/simplecov/issues/60
+    * http://redmine.ruby-lang.org/issues/5333
+
+## Running it
 
     $ git clone https://github.com/colszowka/coverage-bug.git
     $ cd coverage-bug
@@ -18,4 +23,4 @@ the code is run (you can verify that by adding a `raise 'foo'` inside the if-sta
     $ rake spec # using ActiveRecord.create
     => [1, 1, nil, 1, 1, nil, 1, 1, 1, 1, nil, nil, nil]
     
-(Tested this on 1.9.2-p290 and 1.9.3-preview1)
+(Tested this on 1.9.2-p290 and 1.9.3-preview1, same (wrong) resuls on both)
