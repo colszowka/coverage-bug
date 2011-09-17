@@ -17,3 +17,5 @@ the code is run (you can verify that by adding a `raise 'foo'` inside the if-sta
     => [1, 1, nil, 1, 1, nil, 1, 1, 0, 0, nil, nil, nil]
     $ rake spec # using ActiveRecord.create
     => [1, 1, nil, 1, 1, nil, 1, 1, 1, 1, nil, nil, nil]
+    
+(Tested this on 1.9.2-p290 and 1.9.3-preview1)
